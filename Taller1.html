@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="Css">
+<link rel="stylesheet" href="styleCss">
+</head>
+
+<body>
+<div class="wrapper">
+	<nav class="menu">
+<button aria-expanded="true" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+           "
+                       Menu
+                      " 
+          </button>
+<ul id="menu-list">
+	<li>
+		<a href>Menu</a>
+	</li>
+	<li>
+		<a href>Ordena en linea</a>
+	</li>
+	<li>
+		<a href>Sucursales</a>
+	</li>
+	<li>
+		<a href>Contacto</a>
+</li>
+<li>
+	<a href>Quienes Somos</a>
+</li>
+</ul>
+	</nav>
+	<div class="top">
+		<header class="hero">
+        <h1>LA CASA DEL CHOCOLATE</h1>
+        <p>DELICIOSOS!!</p>
+      </header>
+		<div class="cta cta1">
+			<table class="price">
+				<tr>
+				<td>Batidos</td>
+				<td>Sandwiches</td>
+				<td>Postres</td>
+			</tr>
+			<tr>
+				<td>Aperitivos</td>
+				<td>Dulces</td>
+				<td>Pan</td>
+			</tr>
+			</table>
+			
+	</div>
+
+</div>
+
+
+<section class="features">
+	
+      <div class="feature">
+        <span class="icon">🎂</span>
+        <h3>Pastel</h3>
+        
+      </div>
+      <div class="feature">
+        <span class="icon">🍨</span>
+        <h3>Helado</h3>
+        
+      </div>
+      <div class="feature">
+        <span class="icon">🍫</span>
+        <h3>Chocolate</h3>
+        
+      </div>
+	</section>
+
+	
+    </section>
+    <section class="gallery">
+      <h2>Tipos de Chocolates</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/3EFkGjee2nc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+</div>
+<script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+</html>
+
